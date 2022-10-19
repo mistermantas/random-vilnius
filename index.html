@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns/website#">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="twitter:card" content="summary"> 
+    <meta name="twitter:creator" content="@mistermantas">
+    <meta name="og:url" content="https://random-vilnius.mnts.lt">
+    <meta name="canonical" content="https://random-vilnius.mnts.lt">
+    <meta name="og:title" content="Random Vilnius">
+    <meta name="og:description" content="surask vietas vilniuje">
+    <meta name="description" content="surask vietas vilniuje">
+    <meta name="twitter:dnt" content="on">
+    <meta name="twitter:image" content="https://random-vilnius.mnts.lt/og.png">
+    
+    <title>Random Vilnius</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #252525;
+        color: #fff;
+        font: 16px/1.5 sans-serif;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+
+      #title {
+        padding-top: 20vh;
+        height: 50vh;
+        text-align: center;
+      }
+
+      .shuffler { 
+        background: #eee;
+        padding: 16px 20px;
+        font-weight: bold;
+        font-weight: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+
+      <h1 id="title">Labas. Suraskim vietą Vilniui. Nebūtinai gerą, bet galbūt įdomią ar negirdėtą.</h1>
+
+      <button class="shuffler"> 🔀 RODYK </button>
+
+      <script>
+        const btn = document.querySelector('.shuffler');
+        const title = document.querySelector('#title');
+
+        const data = [
+          'Justiniškių viadukas virš Vakarinio aplinkkelio',
+          'VGTU bendrabučių įvairovė',
+          'Kodėl Senoji plytinė vadinasi Senoji plytinė?',
+          'Kelias palei Nerį Paupyje (Aukštaičių g.)',
+          'Ištisi Žirmūnų sandėliai',
+          'Valakampių tiltas prie Žirmūnų paplūdimio',
+          'Pakrantė po Šilo tiltu',
+          'Takas palei Nerį link Žirmūnų paplūdimio',
+          'Lūžių parkas!',
+          'Kelionė link Vilnius Outlet per Litgrido HQ',
+          'Vilniaus antrasis troleibusų (ir autobusų) parkas',
+          'LR Užsienio reikalų ministerijos parkingas (labai gražus)',
+          'Live Square terasos vaizdas',
+          'Lukiškių aikštės žemių Time Capsule',
+          'Skalvių, Žirmūnų ir Senosios plytinės viešojo transporto žiedai',
+          'Tavo mama',
+          'Vamzdys Neries pakrantėje ("arka")',
+          'Visi Vilniaus tiltai virš Neries ypatingai ir gražūs. Mažiau populiarūs – Žvėryno, Lazdynų ir Valakampių tiltai.',
+          'Vilnelės tilrai. Ypač FLUXUS (ir laiptai link Užupio nuo Bernardinų sodo/Sereikiškių parko)',
+          'Gėjų vaivorykštė Pylimo g.',
+          'Gėjų kavinės (visus kavinės, bet ypač Vero Her Excellency ir Vero CUP)',
+          'Vilniaus g. ir Live Square veidrodžiai',
+          'Stoties ekranas į Lenkiją',
+          'Spaudos rūmų didybė',
+          'Viršuliškių šiukšliadėžės',
+          'Pašilaičių alkoholikai',
+          'Klinikų st. link Antakalnio esantis troleibusų plakatas',
+          'Gedimino prospektas slepia ramias gatves kaip A. Jakšto g.',
+          'Tauro kalnas! Best kalnas.',
+          'VU Medicinos fakulteto parkingo vaizdas nuo kalno į žalumyną',
+          'Karoliniškių viadukas virš Laisvės pr. / T. Narbuto g. viadukas'
+        ]
+
+        function showPlace() {
+          const random = Math.floor(Math.random() * data.length);
+          // console.log(random, data[random]);
+
+          title.innerHTML = data[random];
+        }
+
+        btn.addEventListener('click', showPlace);
+      </script>
+
+    </main>
+  </body>
+</html>
