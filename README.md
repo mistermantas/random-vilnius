@@ -1,6 +1,6 @@
 # Random Vilnius
 
-🔀 Go visit a random street in the capital of Lithuania!
+🔀 Go visit a random place in the capital of Lithuania!
 
 Weekend project for Hacktoberfest.
 
