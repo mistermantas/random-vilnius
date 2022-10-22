@@ -28,31 +28,48 @@
       main {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 20px;
       }
 
       #title {
-        padding-top: 20vh;
-        height: 50vh;
+        padding: 20vh 20px; 
         text-align: center;
       }
 
       .shuffler { 
-        background: #eee;
-        padding: 16px 20px;
+        background: red;
+        border-radius: 32px;
+        color: #fff;
+        border: 0;
+        padding: 12px 20px;
         font-weight: bold;
-        font-weight: 20px;
+        font-size: 20px;
+        cursor: pointer; 
+        box-shadow: 0 8px 0 rgb(183,9,0),0 15px 20px rgba(0,0,0,.35);
+        transition: all 0.2s;
+      }
+      .shuffler:active {
+        box-shadow: 0 5px 0 rgb(183,9,0),0 10px 20px rgba(0,0,0,.35);
+        transform: translateY(5px);
+      }
+      .shuffler svg {
+        display: inline-block;
+        height: 20px;
+        width: auto;
       }
     </style>
   </head>
   <body>
     <main>
 
+      <button class="shuffler">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>KashFlow</title><path fill="currentColor" d="M16.278 2.141l-.83 2.702C8.007.174 2.958 4.724 2.958 4.724-1.638 8.564.49 14.678.495 14.678 1.252-.016 14.24 8.943 14.24 8.943c-.237 1.066-.996 2.63-.972 2.654l8.508-1.256zm7.228 7.181C22.747 24.016 9.76 15.057 9.76 15.057c.332-1.066 1.02-2.654 1.02-2.607L2.27 13.66l5.451 8.2.83-2.702c7.441 4.669 12.49.119 12.49.119 4.597-3.84 2.464-9.954 2.464-9.954z"/></svg>
+        Rodyk! </button>
       <h1 id="title">Labas. Suraskim vietą Vilniui. Nebūtinai gerą, bet galbūt įdomią ar negirdėtą.</h1>
 
-      <button class="shuffler"> 🔀 RODYK </button>
 
       <script>
         const btn = document.querySelector('.shuffler');
@@ -61,13 +78,14 @@
         const data = [
           'Justiniškių viadukas virš Vakarinio aplinkkelio',
           'VGTU bendrabučių įvairovė',
-          'Kodėl Senoji plytinė vadinasi Senoji plytinė?',
+          'Kodėl Senoji plytinė vadinasi Senoji plytinė?', 
           'Kelias palei Nerį Paupyje (Aukštaičių g.)',
           'Ištisi Žirmūnų sandėliai',
           'Valakampių tiltas prie Žirmūnų paplūdimio',
           'Pakrantė po Šilo tiltu',
           'Takas palei Nerį link Žirmūnų paplūdimio',
           'Lūžių parkas!',
+          'Kėdronų slėnis',
           'Kelionė link Vilnius Outlet per Litgrido HQ',
           'Vilniaus antrasis troleibusų (ir autobusų) parkas',
           'LR Užsienio reikalų ministerijos parkingas (labai gražus)',
