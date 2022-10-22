@@ -17,14 +17,16 @@
     
     <title>Random Vilnius</title>
     <style>
-      -webkit-tap-highlight-color: transparent; 
       
       html, body {
+        -webkit-tap-highlight-color: transparent; 
         margin: 0;
         padding: 0;
         background: #252525;
         color: #fff;
-        font: 16px/1.5 sans-serif;
+        font-size: 16px
+        line-height: 1.4;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       }
 
       main {
@@ -42,6 +44,10 @@
       }
 
       .shuffler { 
+        position: fixed; 
+        bottom: 10vh;
+        left: 25vw;
+        width: 50vw;
         background: red;
         border-radius: 32px;
         color: #fff;
@@ -57,15 +63,35 @@
         box-shadow: 0 5px 0 rgb(183,9,0),0 10px 20px rgba(0,0,0,.35);
         transform: translateY(5px);
       }
-      .shuffler svg {
+      svg {
         display: inline-block;
-        height: 20px;
+        height: 12px;
         width: auto;
+      }
+
+      a {
+        color: #aaa;
+        text-decoration: none;
+        border-bottom: 1px solid currentColor;
+      }
+
+      small { 
+        color: #757575;
+        padding: 8px;
+        width: calc(100% - 16px);
       }
     </style>
   </head>
   <body>
     <main>
+      <small>
+        <p>
+          Siūlyk naujas vietas per
+          <a href="https://github.com/mistermantas/random-vilnius">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub</a> arba parašyk hi@mnts.lt
+        </p>
+      </small>
 
       <button class="shuffler">
         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>KashFlow</title><path fill="currentColor" d="M16.278 2.141l-.83 2.702C8.007.174 2.958 4.724 2.958 4.724-1.638 8.564.49 14.678.495 14.678 1.252-.016 14.24 8.943 14.24 8.943c-.237 1.066-.996 2.63-.972 2.654l8.508-1.256zm7.228 7.181C22.747 24.016 9.76 15.057 9.76 15.057c.332-1.066 1.02-2.654 1.02-2.607L2.27 13.66l5.451 8.2.83-2.702c7.441 4.669 12.49.119 12.49.119 4.597-3.84 2.464-9.954 2.464-9.954z"/></svg>
