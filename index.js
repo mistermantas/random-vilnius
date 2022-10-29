@@ -46,3 +46,8 @@ function showPlace() {
 }
 
 btn.addEventListener("click", showPlace);
+
+function handleClick(){
+  var element = document.body;
+  element.classList.toggle("light-mode");
+}
