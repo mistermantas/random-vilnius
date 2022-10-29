@@ -36,6 +36,7 @@ const data = [
   "VU Medicinos fakulteto parkingo vaizdas nuo kalno į žalumyną",
   "Karoliniškių viadukas virš Laisvės pr. / T. Narbuto g. viadukas",
   "Lazdynų seniūnija, Lazdynai",
+  "Zooparkas",
 ];
 
 function showPlace() {
