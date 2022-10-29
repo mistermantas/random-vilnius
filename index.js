@@ -36,6 +36,17 @@ const data = [
   "VU Medicinos fakulteto parkingo vaizdas nuo kalno į žalumyną",
   "Karoliniškių viadukas virš Laisvės pr. / T. Narbuto g. viadukas",
   "Lazdynų seniūnija, Lazdynai",
+ 
+  "Trys kryžiai, Istorinis paminklas su vaizdu į miestą",
+  "Vilniaus Šv. apaštalų Petro ir Povilo, XVII a. barokinė katalikų bažnyčia",
+  "Vingio parkas, Miškingas paupio parkas su kavinėmis",
+  "Nacionalinė dailės galerija, Keičiamos parodos šiuolaikinėje aplinkoje",
+  "Vilniaus universiteto botanikos sodas, Renginiai universiteto soduose",
+  "Galvė, Vieta vandens pramogoms ir pilies vaizdai",
+  "Verkių regioninis parkas, Miško parkas su pasivaikščiojimo takais",
+  "Energetikos ir technikos muziejus, Interakt. parodos buvusioje elektrinėje",
+  "Literatų gatvė, Dekoratyvinėmis rašytojų lentelėmis garsi gatvė",
+  "Liepkalnis, Slidžių sportas, Žiemos sportas, kalnų slidinėjimas ir slidinėjimo kurortas",
 ];
 
 function showPlace() {
