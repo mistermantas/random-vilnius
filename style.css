@@ -1,0 +1,65 @@
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  background: #252525;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#title {
+  padding: 20vh 20px;
+  text-align: center;
+}
+
+.shuffler {
+  position: fixed;
+  bottom: 10vh;
+  left: 25vw;
+  width: 50vw;
+  background: red;
+  border-radius: 32px;
+  color: #fff;
+  border: 0;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 8px 0 rgb(183, 9, 0), 0 15px 20px rgba(0, 0, 0, 0.35);
+  transition: all 0.2s;
+}
+.shuffler:active {
+  box-shadow: 0 5px 0 rgb(183, 9, 0), 0 10px 20px rgba(0, 0, 0, 0.35);
+  transform: translateY(5px);
+}
+svg {
+  display: inline-block;
+  height: 12px;
+  width: auto;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+small {
+  color: #757575;
+  padding: 8px;
+  width: calc(100% - 16px);
+}
