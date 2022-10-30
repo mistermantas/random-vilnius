@@ -77,22 +77,4 @@ small {
   color: black;
 }
 
-.theme-btn {
-  position: absolute;
-  right: 15%;
-  top: 8%;
-  background: red;
-  border-radius: 50%;
-  color: #fff;
-  border: 0;
-  padding: 12px 20px;
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 8px 0 rgb(183, 9, 0), 0 15px 20px rgba(0, 0, 0, 0.35);
-  transition: all 0.2s;
-}
-.theme-btn:active {
-  box-shadow: 0 5px 0 rgb(183, 9, 0), 0 10px 20px rgba(0, 0, 0, 0.35);
-  transform: translateY(5px);
-}
+

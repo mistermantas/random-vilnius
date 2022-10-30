@@ -19,6 +19,7 @@
     />
 
     <title>Random Vilnius</title>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -42,9 +43,10 @@
           arba parašyk hi@mnts.lt
         </p>
       </small>
-
-      <div class="theme"> 
-        <button class="theme-btn" onclick="handleClick()"></button>
+<!-- theme change -->
+      <div class="theme" id="theme-btn"> 
+        <!-- <button class="theme-btn" onclick="handleClick()"></button> -->
+        <i style="width: 32px; height: 32px" data-feather="moon" onclick="handleClick()"></i>
       </div>
 
       <button class="shuffler">
@@ -65,5 +67,7 @@
       </h1>
 
       <script src="index.js"></script>
+      <script src="https://unpkg.com/feather-icons"></script>
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </body>
 </html>
