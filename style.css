@@ -1,8 +1,11 @@
-html,
-body {
-  -webkit-tap-highlight-color: transparent;
+html{
   margin: 0;
   padding: 0;
+}
+
+body {
+
+  margin: 0 0;
   background: #252525;
   color: #fff;
   font-size: 16px;
@@ -10,16 +13,13 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-main {
-  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 20px;
 }
+
 
 #title {
   padding: 20vh 20px;
@@ -63,3 +63,18 @@ small {
   padding: 8px;
   width: calc(100% - 16px);
 }
+
+.theme{
+  position: absolute;
+  right: 5%;
+  top: 8%;
+}
+
+.light-mode {
+  background: rgb(252, 192, 192);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+
