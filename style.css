@@ -26,10 +26,13 @@ main {
   text-align: center;
 }
 
-.shuffler {
+.shuffler.fixed { 
   position: fixed;
   bottom: 10vh;
   left: 25vw;
+}
+
+.shuffler {
   width: 50vw;
   background: red;
   border-radius: 32px;
