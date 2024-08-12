@@ -190,7 +190,7 @@ const data = [
   "Vingio istorijos muziejus",
   "Lietuvos aviacijos muziejus",
   "Geležinkelių muziejus",
-  "Energetikos ir technikos muziejus",
+  "Energetikos ir technikos muziejus. Rooftop baras",
   "Vilniaus gynybinės architektūros paveldo objektų sąrašas"
 ];
 
